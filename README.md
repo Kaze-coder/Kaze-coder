@@ -1,5 +1,6 @@
-# 💫 About Me:
-### Hello! I'm Kaze-coder
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&duration=4000&pause=1000&color=00C2FF&center=true&vCenter=true&width=600&lines=Hi+There!+👋;I'm+Kaze-coder;Fullstack+Developer+%7C+Learner+%7C+Creator" alt="Typing SVG" />
+</p>
 
 
 ## 🌐 Socials:
