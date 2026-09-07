@@ -1,0 +1,39 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    # Runs at 01:00 UTC every day (offset from snake to avoid collisions)
+    - cron: '0 1 * * *'
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and write stats JSON
+        run: node scripts/fetch-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Kaze-coder
+
+      - name: Commit & push updated stats
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update stats [skip ci]"
+          file_pattern: "profile/stats.json"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
