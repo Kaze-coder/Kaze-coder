@@ -1,0 +1,13 @@
+{
+  "name": "kaze-coder-profile",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minecraft-themed GitHub profile README",
+  "scripts": {
+    "snake": "node scripts/generate-snake.mjs",
+    "stats": "node scripts/fetch-stats.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

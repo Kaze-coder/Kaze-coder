@@ -1,0 +1,11 @@
+* text=auto
+
+*.svg  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+
+profile/snake-dark.svg  linguist-generated=true
+profile/snake-light.svg linguist-generated=true
+profile/stats.json      linguist-generated=true
