@@ -2,10 +2,13 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    # Runs at 01:00 UTC every day (offset from snake to avoid collisions)
+    # Runs at 01:00 UTC every day (offset from cat-grid to avoid collisions)
     - cron: '0 1 * * *'
   push:
-    branches: [main, master]
+    branches: [main]
+    paths:
+      - "scripts/fetch-stats.mjs"
+      - ".github/workflows/stats.yml"
   workflow_dispatch:
 
 jobs:
@@ -25,7 +28,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch and write stats JSON
+      - name: Generate stats card
         run: node scripts/fetch-stats.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,5 +38,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update stats [skip ci]"
-          file_pattern: "profile/stats.json"
+          file_pattern: "profile/stats.json profile/stats.svg"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"

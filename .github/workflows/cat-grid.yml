@@ -1,0 +1,34 @@
+name: Update Contribution Cat
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-cat-grid.mjs"
+      - ".github/workflows/cat-grid.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Generate contribution cat
+        run: node scripts/generate-cat-grid.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Kaze-coder
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update contribution cat [skip ci]"
+          file_pattern: "profile/cat-grid-dark.svg profile/cat-grid-light.svg"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"

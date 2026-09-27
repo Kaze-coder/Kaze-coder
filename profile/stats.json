@@ -1,0 +1,35 @@
+{
+  "user": "Kaze-coder",
+  "repositories": 13,
+  "stars": 46,
+  "followers": 6,
+  "contributions": 384,
+  "languages": [
+    {
+      "name": "JavaScript",
+      "count": 5,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "TypeScript",
+      "count": 2,
+      "color": "#3178c6"
+    },
+    {
+      "name": "HTML",
+      "count": 1,
+      "color": "#e34c26"
+    },
+    {
+      "name": "PHP",
+      "count": 1,
+      "color": "#4f5d95"
+    },
+    {
+      "name": "GDScript",
+      "count": 1,
+      "color": "#355570"
+    }
+  ],
+  "generatedAt": "2026-09-27T00:00:00.000Z"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1012 30" role="img">
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  .scan { animation: scan 7s linear infinite; }
+  .blink { animation: blink 4.8s steps(1) infinite; transform-origin: center; }
+  .tail { animation: tail 3.2s ease-in-out infinite; transform-origin: 267px 213px; }
+  @keyframes scan { from { transform: translateY(-24px) } to { transform: translateY(344px) } }
+  @keyframes blink { 0%, 46%, 50%, 100% { transform: scaleY(1) } 48% { transform: scaleY(.08) } }
+  @keyframes tail { 0%, 100% { transform: rotate(-5deg) } 50% { transform: rotate(8deg) } }
+  @media (prefers-reduced-motion: reduce) { .scan, .blink, .tail { animation: none } }
+</style><rect x="0" y="14" width="1012" height="1" fill="#2b3028"/><circle cx="18" cy="14.5" r="4" fill="#eea84b"/><path d="M34 14h72" stroke="#d8f06a" stroke-width="2"/></svg>
