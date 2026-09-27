@@ -120,12 +120,12 @@ Personal work, experiments, and selected projects.
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaze-coder&bg_color=090b09&color=eee9dd&title_color=d8f06a&line=eea84b&point=d8f06a&area=true&hide_border=true&custom_title=ACTIVITY+SIGNAL+%2F%2F+LAST+31+DAYS" width="1012" alt="GitHub contribution activity graph">
+<img src="./profile/activity-graph.svg" width="1012" alt="Generated weekly GitHub contribution activity graph">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="./profile/cat-grid-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/cat-grid-dark.svg">
-  <img src="./profile/cat-grid-dark.svg" width="1012" alt="Contribution grid with an animated walking cat">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kaze-coder/Kaze-coder/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kaze-coder/Kaze-coder/output/github-contribution-grid-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/Kaze-coder/Kaze-coder/output/github-contribution-grid-snake-dark.svg" width="1012" alt="Animated contribution grid snake">
 </picture>
 
 <img src="./assets/divider.svg" width="1012" alt="">

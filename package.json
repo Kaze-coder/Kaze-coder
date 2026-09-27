@@ -5,9 +5,8 @@
   "description": "Cat.OS-themed GitHub profile README",
   "scripts": {
     "assets": "node scripts/generate-assets.mjs",
-    "cat-grid": "node scripts/generate-cat-grid.mjs",
     "stats": "node scripts/fetch-stats.mjs",
-    "build:demo": "npm run assets && npm run cat-grid -- --demo && npm run stats -- --demo"
+    "build:demo": "npm run assets && npm run stats -- --demo"
   },
   "engines": {
     "node": ">=20"

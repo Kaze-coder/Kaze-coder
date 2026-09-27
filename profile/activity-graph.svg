@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1012 270" role="img" aria-label="Weekly contribution activity for Kaze-coder">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}</style>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8f06a" stop-opacity=".28"/><stop offset="1" stop-color="#d8f06a" stop-opacity="0"/></linearGradient></defs>
+<rect width="1012" height="270" rx="14" fill="#10130f" stroke="#2b3028"/>
+<text x="34" y="38" fill="#d8f06a" font-size="11" font-weight="700" letter-spacing="2">ACTIVITY SIGNAL / WEEKLY CONTRIBUTIONS</text>
+<text x="978" y="38" text-anchor="end" fill="#858b7d" font-size="9">384 TOTAL / 40 WEEKS</text>
+<path d="M42 82H970M42 128H970M42 174H970M42 220H970" stroke="#2b3028"/>
+<polygon points="42,220 42.0,131.2 65.8,76.0 89.6,170.7 113.4,115.4 137.2,210.1 161.0,154.9 184.8,99.7 208.6,194.3 232.4,139.1 256.2,83.9 279.9,178.6 303.7,123.3 327.5,218.0 351.3,162.8 375.1,107.6 398.9,202.2 422.7,147.0 446.5,91.8 470.3,186.4 494.1,131.2 517.9,76.0 541.7,170.7 565.5,115.4 589.3,210.1 613.1,154.9 636.9,99.7 660.7,194.3 684.5,139.1 708.3,83.9 732.1,178.6 755.8,123.3 779.6,218.0 803.4,162.8 827.2,107.6 851.0,202.2 874.8,147.0 898.6,91.8 922.4,186.4 946.2,131.2 970.0,76.0 970,220" fill="url(#area)"/>
+<polyline points="42.0,131.2 65.8,76.0 89.6,170.7 113.4,115.4 137.2,210.1 161.0,154.9 184.8,99.7 208.6,194.3 232.4,139.1 256.2,83.9 279.9,178.6 303.7,123.3 327.5,218.0 351.3,162.8 375.1,107.6 398.9,202.2 422.7,147.0 446.5,91.8 470.3,186.4 494.1,131.2 517.9,76.0 541.7,170.7 565.5,115.4 589.3,210.1 613.1,154.9 636.9,99.7 660.7,194.3 684.5,139.1 708.3,83.9 732.1,178.6 755.8,123.3 779.6,218.0 803.4,162.8 827.2,107.6 851.0,202.2 874.8,147.0 898.6,91.8 922.4,186.4 946.2,131.2 970.0,76.0" fill="none" stroke="#eea84b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="970.0" cy="76.0" r="5" fill="#d8f06a"/>
+<text x="42" y="247" fill="#62685d" font-size="9">OLDEST</text><text x="970" y="247" text-anchor="end" fill="#62685d" font-size="9">LATEST</text>
+</svg>
