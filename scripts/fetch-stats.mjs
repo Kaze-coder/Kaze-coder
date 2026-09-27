@@ -23,6 +23,7 @@ async function fetchProfile() {
   const profile = payload.data?.user;
   if (!profile) throw new Error(`GitHub user not found: ${user}`);
   const repos = profile.repositories.nodes.filter((repo) => !repo.isFork);
+  // Repository counts keep the language signal stable without cloning source code.
   const languages = new Map();
   for (const repo of repos) {
     if (!repo.primaryLanguage) continue;
