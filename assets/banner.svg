@@ -3,11 +3,11 @@
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
   .scan { animation: scan 7s linear infinite; }
   .blink { animation: blink 4.8s steps(1) infinite; transform-origin: center; }
-  .tail { animation: tail 3.2s ease-in-out infinite; transform-origin: 267px 213px; }
+  .float { animation: float 4s ease-in-out infinite; }
   @keyframes scan { from { transform: translateY(-24px) } to { transform: translateY(344px) } }
   @keyframes blink { 0%, 46%, 50%, 100% { transform: scaleY(1) } 48% { transform: scaleY(.08) } }
-  @keyframes tail { 0%, 100% { transform: rotate(-5deg) } 50% { transform: rotate(8deg) } }
-  @media (prefers-reduced-motion: reduce) { .scan, .blink, .tail { animation: none } }
+  @keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+  @media (prefers-reduced-motion: reduce) { .scan, .blink, .float { animation: none } }
 </style>
   <rect width="1012" height="320" rx="18" fill="#090b09"/>
   <path d="M0 40h1012M0 80h1012M0 120h1012M0 160h1012M0 200h1012M0 240h1012M0 280h1012M80 0v320M160 0v320M240 0v320M320 0v320M400 0v320M480 0v320M560 0v320M640 0v320M720 0v320M800 0v320M880 0v320M960 0v320" stroke="#ffffff" opacity=".035"/>
@@ -18,12 +18,14 @@
   <text x="76" y="248" fill="#858b7d" font-size="13" letter-spacing="1">AUTOMATION-FOCUSED DEVELOPER / INDONESIA</text>
   <path d="M676 34v252" stroke="#2b3028"/>
   <text x="706" y="67" fill="#858b7d" font-size="9" letter-spacing="2">CAT.PROCESS / PID 09</text>
-  <g transform="translate(726 78) scale(1.18)">
-  <path d="M26 56 11 12l48 27c13-5 55-5 68 0l48-27-15 44c14 16 21 35 21 57 0 50-38 73-88 73S5 163 5 113c0-22 7-41 21-57Z" fill="#20251e" stroke="#858b7d" stroke-width="2"/>
-  <path d="m22 26 30 19-23 11Zm142 0-30 19 23 11Z" fill="#eea84b" opacity=".72"/>
-  <g class="blink"><path d="M37 92c13-11 30-10 40 3-11 16-33 15-40-3Zm72 3c10-13 27-14 40-3-7 18-29 19-40 3Z" fill="#d8f06a"/><path d="M58 85v20m70-20v20" stroke="#090b09" stroke-width="5" stroke-linecap="round"/></g>
-  <path d="m93 116-9 8 9 6 9-6Z" fill="#eea84b"/><path d="M93 130c-4 13-17 15-26 7m26-7c4 13 17 15 26 7" fill="none" stroke="#858b7d" stroke-width="2" stroke-linecap="round"/>
-  <path class="tail" d="M157 151c31 9 37-15 21-27" fill="none" stroke="#858b7d" stroke-width="6" stroke-linecap="round"/>
+  <!-- Font Awesome Free 7.3.1 cat icon, CC BY 4.0: https://fontawesome.com/license/free --><g transform="translate(738 76) scale(0.3784722222222222)">
+  <g class="float">
+    <path d="M64 96c53 0 96 43 96 96v85.8c29.7-44.7 77.8-76.2 133.4-84 25.6 60 85.2 102.1 154.6 102.1 10.9 0 21.6-1.1 32-3.1V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192c0-16.6-12.6-30.2-28.7-31.8l-6.6-.3C44.6 158.2 32 144.6 32 128c0-17.7 14.3-32 32-32Zm469.8-92.8C544.2-5.5 560 1.9 560 15.5V128c0 61.9-50.1 112-112 112S336 189.9 336 128V15.5c0-13.6 15.8-21 26.2-12.3L416 48h64l53.8-44.8Z" fill="#171b16" stroke="#858b7d" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M367 22 416 63h-52Zm162 0-49 41h52Z" fill="#eea84b" opacity=".82"/>
+    <path d="M366 242c26 23 138 23 164 0" fill="none" stroke="#eea84b" stroke-width="13" stroke-linecap="round"/>
+    <path d="M447 250v34" stroke="#eea84b" stroke-width="8"/><path d="m447 278-14 15 14 15 14-15Z" fill="#d8f06a"/>
+    <g class="blink"><ellipse cx="400" cy="128" rx="24" ry="18" fill="#d8f06a"/><ellipse cx="496" cy="128" rx="24" ry="18" fill="#d8f06a"/><path d="M400 111v34m96-34v34" stroke="#090b09" stroke-width="8" stroke-linecap="round"/></g>
+  </g>
 </g>
   <circle cx="940" cy="58" r="4" fill="#d8f06a"/><text x="916" y="278" fill="#d8f06a" font-size="9" letter-spacing="1">PURRING</text>
   <rect class="scan" x="38" y="0" width="936" height="2" fill="#d8f06a" opacity=".12"/>
