@@ -2,10 +2,12 @@
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
   .scan { animation: scan 7s linear infinite; }
-  .blink { animation: blink 4.8s steps(1) infinite; transform-origin: center; }
-  .float { animation: float 4s ease-in-out infinite; }
+  .avatar-float { animation: avatar-float 4s ease-in-out infinite; }
+  .avatar-orbit { animation: orbit 12s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .avatar-scan { animation: avatar-scan 3.4s linear infinite; }
   @keyframes scan { from { transform: translateY(-24px) } to { transform: translateY(344px) } }
-  @keyframes blink { 0%, 46%, 50%, 100% { transform: scaleY(1) } 48% { transform: scaleY(.08) } }
-  @keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
-  @media (prefers-reduced-motion: reduce) { .scan, .blink, .float { animation: none } }
+  @keyframes avatar-float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+  @keyframes orbit { to { transform: rotate(360deg) } }
+  @keyframes avatar-scan { from { transform: translateY(0) } to { transform: translateY(var(--travel)) } }
+  @media (prefers-reduced-motion: reduce) { .scan, .avatar-float, .avatar-orbit, .avatar-scan { animation: none } }
 </style><rect width="1012" height="74" rx="10" fill="#10130f" stroke="#2b3028"/><rect x="0" width="8" height="74" rx="4" fill="#eea84b"/><text x="32" y="30" fill="#eea84b" font-size="10" font-weight="700" letter-spacing="2">01 / PROFILE</text><text x="32" y="54" fill="#eee9dd" font-size="22" font-weight="800" letter-spacing="-1">OPERATOR PROFILE</text><text x="980" y="43" text-anchor="end" fill="#858b7d" font-size="9" letter-spacing="2">IDENTITY LOADED</text></svg>

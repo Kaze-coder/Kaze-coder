@@ -2,10 +2,12 @@
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
   .scan { animation: scan 7s linear infinite; }
-  .blink { animation: blink 4.8s steps(1) infinite; transform-origin: center; }
-  .float { animation: float 4s ease-in-out infinite; }
+  .avatar-float { animation: avatar-float 4s ease-in-out infinite; }
+  .avatar-orbit { animation: orbit 12s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .avatar-scan { animation: avatar-scan 3.4s linear infinite; }
   @keyframes scan { from { transform: translateY(-24px) } to { transform: translateY(344px) } }
-  @keyframes blink { 0%, 46%, 50%, 100% { transform: scaleY(1) } 48% { transform: scaleY(.08) } }
-  @keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
-  @media (prefers-reduced-motion: reduce) { .scan, .blink, .float { animation: none } }
+  @keyframes avatar-float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+  @keyframes orbit { to { transform: rotate(360deg) } }
+  @keyframes avatar-scan { from { transform: translateY(0) } to { transform: translateY(var(--travel)) } }
+  @media (prefers-reduced-motion: reduce) { .scan, .avatar-float, .avatar-orbit, .avatar-scan { animation: none } }
 </style><rect x="0" y="14" width="1012" height="1" fill="#2b3028"/><circle cx="18" cy="14.5" r="4" fill="#eea84b"/><path d="M34 14h72" stroke="#d8f06a" stroke-width="2"/></svg>
